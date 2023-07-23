@@ -80,6 +80,8 @@ public class ViewDivisas extends javax.swing.JFrame {
             }
         });
 
+        txtValorFinal.setEditable(false);
+
         txtMonedaDestino.setEditable(false);
 
         btnLimpiar.setText("Limpiar");
