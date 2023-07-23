@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import modelo.ModelConversor;
 import modelo.Moneda;
 import vista.ViewDivisas;
+import vista.ViewTemperatura;
 
 /**
  * @author Rene Avila Alonso
@@ -132,4 +133,18 @@ public class Controlador  implements ActionListener{
         view.txtSiglaMoneda1.setText("");
         view.txtSiglaMoneda2.setText("");
     }
+    
+    // calculos grados celsius y fahrenheit
+    // celsius = gradosc * 1.8 + 32; 
+    public static double calcularFahrenheit(int grados){
+        Double res= (Double) (grados * 1.8 + 32.0);
+        return (res);
+    }
+    
+    // fahren = (gradosf - 32) * 5  / 9; 
+    public static double calcularCelsius(int grados){
+        Double res= (Double) (grados * 5.0 / 9.0) - 32;
+        return (res);
+    }
+        
 }
