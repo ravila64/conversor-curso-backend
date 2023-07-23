@@ -4,7 +4,7 @@ import modelo.ModelConversor;
 import modelo.Moneda;
 
 /**
- * @author Rene Avil Alonso
+ * @author Rene Avila Alonso
  */
 public class ViewDivisas extends javax.swing.JFrame {
     /**
@@ -42,6 +42,7 @@ public class ViewDivisas extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         txtSiglaMoneda1 = new javax.swing.JTextField();
         txtSiglaMoneda2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,6 +110,8 @@ public class ViewDivisas extends javax.swing.JFrame {
 
         txtSiglaMoneda2.setEditable(false);
 
+        jLabel6.setText("Developed by Rene Avila Alonso-2023");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -151,7 +154,10 @@ public class ViewDivisas extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(txtMonedaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtSiglaMoneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(txtSiglaMoneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -185,7 +191,9 @@ public class ViewDivisas extends javax.swing.JFrame {
                     .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57))
+                .addGap(32, 32, 32)
+                .addComponent(jLabel6)
+                .addContainerGap())
         );
 
         pack();
@@ -197,7 +205,7 @@ public class ViewDivisas extends javax.swing.JFrame {
 
     private void cbxPaisCambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxPaisCambioActionPerformed
         // TODO add your handling code here:
-        System.out.println("cbxPaisCambioDivisa");
+        //System.out.println("cbxPaisCambioDivisa");
     }//GEN-LAST:event_cbxPaisCambioActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -266,6 +274,7 @@ public class ViewDivisas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     public javax.swing.JTextField txtCantidad;
     public javax.swing.JTextField txtMonedaDestino;
     public javax.swing.JTextField txtMonedaInicial;

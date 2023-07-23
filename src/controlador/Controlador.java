@@ -31,7 +31,7 @@ public class Controlador  implements ActionListener{
         public void actionPerformed(ActionEvent e) throws IllegalArgumentException{
             // tomar variables para hacer calculos que estan en el JFrame
             try{
-            	// seleccionar pais dado por usuario
+            	// seleccionar paises dados por usuario
                 String paisO= view.cbxPaisOrigen.getSelectedItem().toString().trim();  // trim() quita blancos ambos lados
                 String paisC= view.cbxPaisCambio.getSelectedItem().toString().trim();
                 System.out.println("Divisa de "+paisO+ " pasar a "+paisC);
