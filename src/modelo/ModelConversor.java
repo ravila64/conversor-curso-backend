@@ -23,7 +23,5 @@ public class ModelConversor {
         divisa.add(new Moneda("Paraguay","PESO","PYG",7270.60));
         return divisa;
     }
-
-    
 }
 

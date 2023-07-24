@@ -103,7 +103,7 @@ public class Controlador  implements ActionListener{
                             JOptionPane.showMessageDialog(view, "Pais Cambio No existe");
                         }
                     }else{
-                    	JOptionPane.showMessageDialog(view, "Pais Origen no existe");
+                            JOptionPane.showMessageDialog(view, "Pais Origen no existe");
                     }
                     
                    } // end else paises iguales    
@@ -138,13 +138,13 @@ public class Controlador  implements ActionListener{
     // calculos grados celsius y fahrenheit
     // celsius = gradosc * 1.8 + 32; 
     public static double calcularFahrenheit(int grados){
-        Double res= (Double) (grados * 1.8 + 32.0);
+        Double res= (Double) (grados * 9.0 / 5.0) + 32.0;
         return (res);
     }
     
     // fahren = (gradosf - 32) * 5  / 9; 
     public static double calcularCelsius(int grados){
-        Double res= (Double) (grados * 5.0 / 9.0) - 32;
+        Double res= (Double) (grados - 32.0 ) * 5.0 / 9.0;
         return (res);
     }
         
