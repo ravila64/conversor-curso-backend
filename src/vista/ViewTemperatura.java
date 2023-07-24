@@ -187,7 +187,7 @@ public class ViewTemperatura extends javax.swing.JFrame {
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
@@ -200,10 +200,10 @@ public class ViewTemperatura extends javax.swing.JFrame {
         
        //ConvertirCelsius();
         try{
-            int cantg=0;
+            double cantg=0;
             String formPos="###,###,###,###.00";
             DecimalFormat df=new DecimalFormat();            
-            cantg = Integer.parseInt(txtGrados.getText().trim()); 
+            cantg = Double.parseDouble(txtGrados.getText().trim()); 
             System.out.println("Grados digitados "+cantg);
             double gc = calcularCelsius(cantg);
             String resTxt = df.format(gc);
@@ -219,10 +219,10 @@ public class ViewTemperatura extends javax.swing.JFrame {
 
         //ConvertirFahrenheit();
         try{
-            int cant=0;
+            double cant=0;
             String formPos="###,###,###,###.00";
             DecimalFormat df=new DecimalFormat();          
-            cant = Integer.parseInt(txtGrados.getText().trim()); 
+            cant = Double.parseDouble(txtGrados.getText().trim()); 
             double gf = calcularFahrenheit(cant);  
             String resTxt = df.format(gf);
             txtResult.setText(resTxt);

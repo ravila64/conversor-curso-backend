@@ -32,7 +32,7 @@ public class ViewAcercaDe extends javax.swing.JFrame {
         lblImagen = new javax.swing.JLabel();
         btnSalir = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -98,7 +98,8 @@ public class ViewAcercaDe extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        System.exit(0);
+       this.dispose();
+        //System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
     /**

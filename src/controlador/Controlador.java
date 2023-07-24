@@ -137,13 +137,13 @@ public class Controlador  implements ActionListener{
     
     // calculos grados celsius y fahrenheit
     // celsius = gradosc * 1.8 + 32; 
-    public static double calcularFahrenheit(int grados){
+    public static double calcularFahrenheit(double grados){
         Double res= (Double) (grados * 9.0 / 5.0) + 32.0;
         return (res);
     }
     
     // fahren = (gradosf - 32) * 5  / 9; 
-    public static double calcularCelsius(int grados){
+    public static double calcularCelsius(double grados){
         Double res= (Double) (grados - 32.0 ) * 5.0 / 9.0;
         return (res);
     }
