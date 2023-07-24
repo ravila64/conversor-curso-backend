@@ -36,7 +36,7 @@ public class ViewAcercaDe extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Programa desarrollado a nivel eductivo como sprint Conversor \nDirigido por ALURA-ONE, sede Sao Pablo, Brazil\nDesarrollado por Rene Avila Alonso\nBog, Col.\nJulio de 2023.\n\n");
+        jTextArea1.setText("Programa desarrollado a nivel educativo como sprint Conversor .\nPresentado a ALURA-ONE, sede Sao Pablo, Brazil\nDesarrollado por Rene Avila Alonso\nBog, Col.\nJulio de 2023.\n\n");
         jScrollPane1.setViewportView(jTextArea1);
 
         lblImagen.setBackground(new java.awt.Color(204, 255, 255));

@@ -258,7 +258,6 @@ public class ViewDivisas extends javax.swing.JFrame {
 
     private void cbxPaisCambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxPaisCambioActionPerformed
         // TODO add your handling code here:
-        //System.out.println("cbxPaisCambioDivisa");
     }//GEN-LAST:event_cbxPaisCambioActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed

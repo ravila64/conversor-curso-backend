@@ -87,7 +87,7 @@
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Programa desarrollado a nivel eductivo como sprint Conversor &#xa;Dirigido por ALURA-ONE, sede Sao Pablo, Brazil&#xa;Desarrollado por Rene Avila Alonso&#xa;Bog, Col.&#xa;Julio de 2023.&#xa;&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Programa desarrollado a nivel educativo como sprint Conversor .&#xa;Presentado a ALURA-ONE, sede Sao Pablo, Brazil&#xa;Desarrollado por Rene Avila Alonso&#xa;Bog, Col.&#xa;Julio de 2023.&#xa;&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>

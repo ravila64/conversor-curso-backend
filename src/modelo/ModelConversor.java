@@ -21,7 +21,6 @@ public class ModelConversor {
         divisa.add(new Moneda("Brazil","REAL","BRL",4.82));
         divisa.add(new Moneda("Uruguay","PESO","UYU",37.99));
         divisa.add(new Moneda("Paraguay","PESO","PYG",7270.60));
- 
         return divisa;
     }
 

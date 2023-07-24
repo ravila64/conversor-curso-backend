@@ -12,6 +12,7 @@ import vista.ViewTemperatura;
 
 /**
  * @author Rene Avila Alonso
+ * @date 
  */
 
 public class Controlador  implements ActionListener{
@@ -35,7 +36,7 @@ public class Controlador  implements ActionListener{
             	// seleccionar paises dados por usuario
                 String paisO= view.cbxPaisOrigen.getSelectedItem().toString().trim();  // trim() quita blancos ambos lados
                 String paisC= view.cbxPaisCambio.getSelectedItem().toString().trim();
-                System.out.println("Divisa de "+paisO+ " pasar a "+paisC);
+                //System.out.println("Divisa de "+paisO+ " pasar a "+paisC);
                 
                 // selecciono pais origen
                 Moneda paisBusq = buscarPais(paisO);
@@ -76,7 +77,7 @@ public class Controlador  implements ActionListener{
                         String resTxt = df.format(dolares);
                         view.txtValorFinal.setText(resTxt);
                         
-                        System.out.println("Intermedia USD "+dolares+" Pais "+paisBusq.getPais());
+                       // System.out.println("Intermedia USD "+dolares+" Pais "+paisBusq.getPais());
                         // convierte cantidad a dolares, no importando el pais
                         
                         Moneda paisCambio = buscarPais(paisC);
@@ -97,7 +98,7 @@ public class Controlador  implements ActionListener{
                             }
                             resTxt = df.format(result);
                             view.txtValorFinal.setText(resTxt);
-                            System.out.println("resultado "+result+" Pais "+paisCambio.getPais());
+                          //  System.out.println("resultado "+result+" Pais "+paisCambio.getPais());
                         } else{
                             JOptionPane.showMessageDialog(view, "Pais Cambio No existe");
                         }
